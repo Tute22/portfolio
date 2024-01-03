@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import logo from "../../public/Logo.png";
 
 function Logo() {
   const [style, setStyle] = useState({
@@ -17,13 +18,7 @@ function Logo() {
     return () => clearTimeout(timer);
   }, []);
 
-  return (
-    <img
-      className="w-[950px] h-[950px]"
-      src={"../../public/Logo.png"}
-      style={style}
-    />
-  );
+  return <img className="w-[950px] h-[950px]" src={logo} style={style} />;
 }
 
 export default Logo;

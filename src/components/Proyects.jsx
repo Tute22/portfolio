@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { ProyectCard } from "../common/ProyectCard";
 import { Modal } from "./Modal";
+import firstplug from "../../public/first.png";
+import fastDelivery from "../../public/fast.png";
+import rinconMatero from "../../public/rincon.png";
+import tmdb from "../../public/tmdb2.png";
 
 export const Proyects = () => {
   const [modalInfo, setModalInfo] = useState(null);
@@ -22,12 +26,12 @@ export const Proyects = () => {
           </h1>
           <div className="flex justify-center gap-44 mt-8 ">
             <ProyectCard
-              img={"../../public/first.png"}
+              img={firstplug}
               tittle={"First-Plug"}
               subtittle={"En desarrollo"}
               onClick={() =>
                 handleCardClick({
-                  img: "../../public/first.png",
+                  img: firstplug,
                   tittle: "First-Plug",
                   details:
                     "Desarrollo de plataforma web donde el foco principal es la gestión, adquisición y control de inventario, simplificando el onboarding y equipamiento para trabajadores remotos.",
@@ -39,12 +43,12 @@ export const Proyects = () => {
               }
             />
             <ProyectCard
-              img={"../../public/fast.png"}
+              img={fastDelivery}
               tittle={"Fast Delivery"}
               subtittle={"En desarrollo"}
               onClick={() =>
                 handleCardClick({
-                  img: "../../public/fast.png",
+                  img: fastDelivery,
                   tittle: "Fast Delivery",
                   details:
                     "Aplicación web (mobile first) para reparto de productos/paquetería con geolocalización y seguimiento en tiempo real. Posee perfiles de usuario, administrador y repartidor.",
@@ -54,11 +58,11 @@ export const Proyects = () => {
               }
             />
             <ProyectCard
-              img={"../../public/rincon.png"}
+              img={rinconMatero}
               tittle={"Rincon Matero"}
               onClick={() =>
                 handleCardClick({
-                  img: "../../public/rincon.png",
+                  img: rinconMatero,
                   tittle: "Rincon Matero",
                   details:
                     "Eccomerce de venta de productos para el mate. Posee registro de usuarios y login, perfil de usuario, carrito de compras, checkout, pagos con Mercado Pago, panel de administrador.",
@@ -68,11 +72,11 @@ export const Proyects = () => {
               }
             />
             <ProyectCard
-              img={"../../public/tmdb2.png"}
+              img={tmdb}
               tittle={"TMDB"}
               onClick={() =>
                 handleCardClick({
-                  img: "../../public/tmdb2.png",
+                  img: tmdb,
                   tittle: "TMDB",
                   details:
                     "Aplicación web para buscar peliculas y series, consumiendo la API de TMDB. Posee registro de usuarios y login.",

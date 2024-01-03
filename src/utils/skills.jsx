@@ -1,3 +1,10 @@
+import mongoose from "../../public/mongoose.png";
+import mobx from "../../public/mobx.png";
+import jest from "../../public/jest.png";
+import figma from "../../public/figma2.png";
+import canva from "../../public/canva.png";
+import postman from "../../public/postmanLogo.png";
+
 export const dataSkills = [
   {
     name: "Next.js",
@@ -96,26 +103,26 @@ export const dataSkills = [
   },
   {
     name: "Mongoose",
-    image: "../../public/mongoose.png",
+    image: mongoose,
   },
   {
     name: "Mobx",
-    image: "../../public/mobx.png",
+    image: mobx,
   },
   {
     name: "Jest",
-    image: "../../public/jest.png",
+    image: jest,
   },
   {
     name: "Figma",
-    image: "../../public/figma2.png",
+    image: figma,
   },
   {
     name: "Canva",
-    image: "../../public/canva.png",
+    image: canva,
   },
   {
     name: "Postman",
-    image: "../../public/postmanLogo.png",
+    image: postman,
   },
 ];

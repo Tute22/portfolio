@@ -2,6 +2,7 @@ import React from "react";
 import { Instagram } from "../common/icons/Instagram";
 import { GitHub } from "../common/icons/GitHub";
 import { LinkedIn } from "../common/icons/LinkedIn";
+import fotoPerfil from "../../public/FotoPerfil.png";
 
 export const Me = () => {
   return (
@@ -45,7 +46,7 @@ export const Me = () => {
             <div className="flex flex-col gap-10 ">
               <img
                 className="rounded-3xl w-[500px] h-auto"
-                src="../../public/FotoPerfil.png"
+                src={fotoPerfil}
                 alt="Perfil"
               />
               <div className="flex gap-28 justify-center animate-bounce">

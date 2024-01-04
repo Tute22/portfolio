@@ -18,7 +18,17 @@ function Logo() {
     return () => clearTimeout(timer);
   }, []);
 
-  return <img className="w-[950px] h-[950px]" src={logo} style={style} />;
+  // Clases de Tailwind para responsividad y tamaño fijo en escritorio
+  return (
+    <div>
+      <img
+        className="w-full h-auto md:w-[950px] md:h-[950px] "
+        src={logo}
+        style={style}
+        alt="Logo"
+      />
+    </div>
+  );
 }
 
 export default Logo;

@@ -32,14 +32,16 @@ export const Modal = ({ info, onClose }) => {
       className="fixed inset-0 backdrop-blur-lg overflow-y-auto h-full w-full"
       onClick={handleBackgroundClick}
     >
-      <button
-        onClick={handleClose}
-        className="text-white hover:bg-[#21282E] p-1 rounded-xl absolute left-[1176px] top-[82px] z-50"
-      >
-        <CloseIcon className="text-white" />
-      </button>
+      <div className="w-full flex justify-end">
+        <button
+          onClick={handleClose}
+          className="text-white hover:bg-[#21282E] p-1 rounded-xl absolute md:left-[1176px] md:top-[82px] z-50"
+        >
+          <CloseIcon className="text-white" />
+        </button>
+      </div>
       <div
-        className={`flex flex-col relative top-20 mx-auto p-5 w-[500px] shadow-2xl rounded-xl bg-[#151b1f] gap-5 transition-all duration-300 ease-in-out ${
+        className={`flex flex-col relative top-32 md:top-20 mx-auto p-5 w-full max-w-[400px] md:max-w-[500px] shadow-2xl rounded-xl bg-[#151b1f] gap-5 transition-all duration-300 ease-in-out ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
         }`}
         onClick={(e) => e.stopPropagation()}

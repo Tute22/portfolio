@@ -2,9 +2,9 @@ import React from "react";
 
 export const ProyectCard = ({ img, tittle, subtittle, onClick }) => {
   return (
-    <div className="h-[350px] w-[400px] rounded-xl flex flex-col gap-4">
+    <div className="md:h-[400px] md:w-[300px] h-[400px] rounded-xl flex flex-col gap-4">
       <img
-        className="rounded-xl cursor-pointer transition-all duration-300 transform hover:scale-105"
+        className="h-3/5 md:h-auto rounded-xl cursor-pointer transition-all duration-300 transform hover:scale-105"
         src={img}
         alt={tittle}
         onClick={onClick}
@@ -21,5 +21,3 @@ export const ProyectCard = ({ img, tittle, subtittle, onClick }) => {
     </div>
   );
 };
-
-export default ProyectCard;

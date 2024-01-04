@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 export const Contact = () => {
   return (
@@ -7,7 +7,7 @@ export const Contact = () => {
       <form
         action="https://formspree.io/f/xgegeznw"
         method="POST"
-        className="flex flex-col gap-3 w-[800px] "
+        className="flex flex-col gap-3 w-full max-w-[800px] px-4 md:px-0"
       >
         <div>
           <label
@@ -74,15 +74,13 @@ export const Contact = () => {
             className="text-white mt-1 block w-full px-3 py-2 border bg-[#21282E] border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#55D0B3] focus:border-[#55D0B3]"
           ></textarea>
         </div>
-        <div id="contact" className="flex justify-center mt-4">
-          <a href="" target="_blank">
-            <button
-              type="submit"
-              className="bg-[#55D0B3] rounded-3xl text-[#21282E] font-semibold p-4 text-lg hover:translate-y-[-1px] hover:shadow-emerald-600 shadow-md active:translate-y-0 active:shadow-none"
-            >
-              ENVIAR MENSAJE
-            </button>
-          </a>
+        <div className="flex justify-center mt-4">
+          <button
+            type="submit"
+            className="bg-[#55D0B3] rounded-3xl text-[#21282E] font-semibold p-4 text-lg hover:translate-y-[-1px] hover:shadow-emerald-600 shadow-md active:translate-y-0 active:shadow-none"
+          >
+            ENVIAR MENSAJE
+          </button>
         </div>
       </form>
     </section>

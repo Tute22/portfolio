@@ -5,26 +5,31 @@ import firstplug from "../../public/first.png";
 import fastDelivery from "../../public/fast.png";
 import rinconMatero from "../../public/rincon.png";
 import tmdb from "../../public/tmdb2.png";
+import { useDispatch } from "react-redux";
+import { setDisplay } from "../store/navbarSlice";
 
 export const Proyects = () => {
   const [modalInfo, setModalInfo] = useState(null);
+  const dispatch = useDispatch();
 
   const handleCardClick = (info) => {
     setModalInfo(info);
+    dispatch(setDisplay(false));
   };
 
   const closeModal = () => {
     setModalInfo(null);
+    dispatch(setDisplay(true));
   };
 
   return (
     <section id="proyects" className="flex justify-center mt-24">
-      <div className="bg-[#21282E] rounded-xl w-11/12 p-8">
-        <div className=" flex flex-col gap-6 pb-16">
-          <h1 className="flex font-semibold justify-center text-4xl text-[#55D0B3]">
+      <div className="bg-[#21282E] rounded-xl w-11/12 p-8 ">
+        <div className="flex flex-col gap-6 pb-10">
+          <h1 className="font-semibold text-center text-4xl text-[#55D0B3] ">
             Proyectos
           </h1>
-          <div className="flex justify-center gap-44 mt-8 ">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-40 mt-8">
             <ProyectCard
               img={firstplug}
               tittle={"First-Plug"}
@@ -79,7 +84,7 @@ export const Proyects = () => {
                   img: tmdb,
                   tittle: "TMDB",
                   details:
-                    "Aplicación web para buscar peliculas y series, consumiendo la API de TMDB. Posee registro de usuarios y login.",
+                    "Aplicacion web para buscar peliculas y series, consumiendo la API de TMDB. Posee registro de usuarios y login.",
                   URLClient: "https://github.com/Tute22/26-checkpoint-TMDB",
                   URLApi:
                     "https://developer.themoviedb.org/docs/getting-started",
@@ -94,5 +99,3 @@ export const Proyects = () => {
     </section>
   );
 };
-
-export default Proyects;

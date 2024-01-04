@@ -5,6 +5,7 @@ export const Contact = () => {
     <section className="flex flex-col items-center justify-center w-full gap-8 mt-16">
       <h1 className="flex font-semibold text-4xl text-[#55D0B3]">Contacto</h1>
       <form
+        id="contact"
         action="https://formspree.io/f/xgegeznw"
         method="POST"
         className="flex flex-col gap-3 w-full max-w-[800px] px-4 md:px-0"

@@ -50,7 +50,6 @@ export const Proyects = () => {
             <ProyectCard
               img={fastDelivery}
               tittle={"Fast Delivery"}
-              subtittle={"En desarrollo"}
               onClick={() =>
                 handleCardClick({
                   img: fastDelivery,

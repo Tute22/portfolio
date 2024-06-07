@@ -1,9 +1,11 @@
 import mongoose from "../../public/mongoose.png";
 import mobx from "../../public/mobx.png";
 import jest from "../../public/jest.png";
-import figma from "../../public/figma2.png";
 import canva from "../../public/canva.png";
 import postman from "../../public/postmanLogo.png";
+import nest from "../../public/nest.png";
+import tailwind from "../../public/tailwind.png";
+import python from "../../public/Python.png";
 
 export const dataSkills = [
   {
@@ -33,8 +35,7 @@ export const dataSkills = [
   },
   {
     name: "Nest.js",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg",
+    image: nest,
   },
   {
     name: "Bootstrap",
@@ -42,9 +43,12 @@ export const dataSkills = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
   },
   {
+    name: "Python",
+    image: python,
+  },
+  {
     name: "Tailwind",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+    image: tailwind,
   },
   {
     name: "Sass",
@@ -112,10 +116,6 @@ export const dataSkills = [
   {
     name: "Jest",
     image: jest,
-  },
-  {
-    name: "Figma",
-    image: figma,
   },
   {
     name: "Canva",
